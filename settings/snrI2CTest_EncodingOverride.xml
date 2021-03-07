@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userOverrides>
+    <override>
+        <path>D:\dtitcode\EndPoints_2020\snrI2CTest\USER\src\main_functions.c</path>
+        <encoding>System</encoding>
+    </override>
+    <override>
+        <path>D:\dtitcode\EndPoints_2020\snrI2CTest\stm32L151\BSP\delay.c</path>
+        <encoding>System</encoding>
+    </override>
+    <override>
+        <path>D:\dtitcode\EndPoints_2020\snrI2CTest\stm32L151\BSP\i2c.c</path>
+        <encoding>System</encoding>
+    </override>
+</userOverrides>

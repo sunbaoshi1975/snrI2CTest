@@ -1,0 +1,386 @@
+###############################################################################
+#
+# IAR ELF Linker V8.32.1.169/W32 for ARM                  07/Mar/2021  02:25:29
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Exe\snrI2CTest.out
+#    Map file     =  
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\List\snrI2CTest.map
+#    Command line =  
+#        -f C:\Users\sunboss\AppData\Local\Temp\EWF3F5.tmp
+#        (D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\common.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\delay.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\i2c.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\main.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\main_functions.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\misc.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\nsr_i2c.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\sensorMIC.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\startup_stm32l1xx_md.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_adc.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_aes.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_aes_util.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_comp.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_crc.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_dac.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_dbgmcu.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_dma.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_exti.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_flash.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_flash_ramfunc.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_fsmc.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_gpio.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_i2c.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_it.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_iwdg.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_lcd.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_opamp.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_pwr.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_rcc.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_rtc.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_sdio.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_spi.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_syscfg.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_tim.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_usart.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\stm32l1xx_wwdg.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\system_stm32l1xx.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\timer.o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj\usart2.o
+#        --no_out_extension -o
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Exe\snrI2CTest.out --map
+#        D:\dtitcode\EndPoints_2020\snrI2CTest\Release\List\snrI2CTest.map
+#        --config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.2\arm\config\linker\ST\stm32l151xB-A.icf" --entry
+#        __iar_program_start --inline --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x801'ffff] { ro };
+define block CSTACK with size = 2K, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'7fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+No sections matched the following patterns:
+
+  section .eeprom  in "P3"
+
+
+  Section            Kind         Address   Size  Object
+  -------            ----         -------   ----  ------
+"A0":                                       0xf4
+  .intvec            ro code   0x800'0000   0xf4  startup_stm32l1xx_md.o [1]
+                             - 0x800'00f4   0xf4
+
+"P1":                                      0xec4
+  .text              ro code   0x800'00f4  0x34a  i2c.o [1]
+  .text              ro code   0x800'043e   0x12  stm32l1xx_it.o [1]
+  .text              ro code   0x800'0450  0x11c  stm32l1xx_rcc.o [1]
+  .text              ro code   0x800'056c   0xa6  stm32l1xx_gpio.o [1]
+  .text              ro code   0x800'0614   0x98  delay.o [1]
+  .text              ro code   0x800'06ac   0x98  misc.o [1]
+  .text              ro code   0x800'0744  0x10a  stm32l1xx_usart.o [1]
+  .text              ro code   0x800'0850  0x108  usart2.o [1]
+  .text              ro code   0x800'0958  0x104  system_stm32l1xx.o [1]
+  .text              ro code   0x800'0a5c   0xe0  main_functions.o [1]
+  .text              ro code   0x800'0b3c   0xb8  timer.o [1]
+  .text              ro code   0x800'0bf4   0xd4  sensorMIC.o [1]
+  .text              ro code   0x800'0cc8   0xac  stm32l1xx_tim.o [1]
+  .text              ro code   0x800'0d74   0x62  nsr_i2c.o [1]
+  .text              ro code   0x800'0dd8   0x22  common.o [1]
+  .text              ro code   0x800'0dfa   0x38  packbits_init_single.o [3]
+  .text              ro code   0x800'0e34   0x28  data_init.o [3]
+  .iar.init_table    const     0x800'0e5c   0x10  - Linker created -
+  .text              ro code   0x800'0e6c   0x1e  cmain.o [3]
+  .text              ro code   0x800'0e8a   0x12  main.o [1]
+  .text              ro code   0x800'0e9c    0x4  exit.o [2]
+  .text              ro code   0x800'0ea0    0xa  cexit.o [3]
+  .text              ro code   0x800'0eac    0xc  XXexit.o [3]
+  .text              ro code   0x800'0eb8   0x10  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0ec8    0xc  cstartup_M.o [3]
+  .text              ro code   0x800'0ed4    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0ed8    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0edc    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0ee0    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0ee4    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0ee8    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0eec    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0ef0    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0ef4    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0ef8    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0efc    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f00    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f04    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f08    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f0c    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f10    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f14    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f18    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f1c    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f20    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f24    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f28    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f2c    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f30    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f34    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f38    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f3c    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f40    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f44    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f48    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f4c    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f50    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f54    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f58    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f5c    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f60    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f64    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f68    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f6c    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f70    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f74    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f78    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f7c    0x4  startup_stm32l1xx_md.o [1]
+  .text              ro code   0x800'0f80    0x4  startup_stm32l1xx_md.o [1]
+  .rodata            const     0x800'0f84    0x0  packbits_init_single.o [3]
+  Initializer bytes  const     0x800'0f84   0x34  <for P2-1>
+                             - 0x800'0fb8  0xec4
+
+"P2", part 1 of 2:                          0x5a
+  P2-1                        0x2000'0000   0x5a  <Init block>
+    .data            inited   0x2000'0000   0x1c  stm32l1xx_rcc.o [1]
+    .data            inited   0x2000'001c   0x20  system_stm32l1xx.o [1]
+    .data            inited   0x2000'003c   0x10  timer.o [1]
+    .bss             inited   0x2000'004c    0x2  delay.o [1]
+    .bss             inited   0x2000'004e    0x4  main_functions.o [1]
+    .bss             inited   0x2000'0052    0x8  sensorMIC.o [1]
+                            - 0x2000'005a   0x5a
+
+"P2", part 2 of 2:                         0x800
+  CSTACK                      0x2000'0060  0x800  <Block>
+    CSTACK           uninit   0x2000'0060  0x800  <Block tail>
+                            - 0x2000'0860  0x800
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x800'0fb8   0x801'ffff  0x1'f048
+  0x2000'005a  0x2000'005f       0x6
+  0x2000'0860  0x2000'7fff    0x77a0
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Copy/packbits (__iar_packbits_init_single3)
+    1 source range, total size 0x34 (57% of destination):
+           0x800'0f84  0x34
+    1 destination range, total size 0x5a:
+          0x2000'0000  0x5a
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+command line/config:
+    -------------------------------------------------
+    Total:
+
+D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj: [1]
+    common.o                     34
+    delay.o                     152        2        2
+    i2c.o                       842
+    main.o                       18
+    main_functions.o            224        2        4
+    misc.o                      152
+    nsr_i2c.o                    98
+    sensorMIC.o                 212        4        8
+    startup_stm32l1xx_md.o      436
+    stm32l1xx_gpio.o            166
+    stm32l1xx_it.o               18
+    stm32l1xx_rcc.o             284       16       28
+    stm32l1xx_tim.o             172
+    stm32l1xx_usart.o           266
+    system_stm32l1xx.o          260       18       32
+    timer.o                     184        9       16
+    usart2.o                    264
+    -------------------------------------------------
+    Total:                    3 782       51       90
+
+dl7M_tln.a: [2]
+    exit.o                        4
+    -------------------------------------------------
+    Total:                        4
+
+rt7M_tl.a: [3]
+    XXexit.o                     12
+    cexit.o                      10
+    cmain.o                      30
+    cstartup_M.o                 12
+    data_init.o                  40
+    packbits_init_single.o       56
+    -------------------------------------------------
+    Total:                      160
+
+    Gaps                         10
+    Linker created                        17    2 048
+-----------------------------------------------------
+    Grand Total:              3 956       68    2 138
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address  Size  Type      Object
+-----                       -------  ----  ----      ------
+.iar.init_table$$Base    0x800'0e5c         --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'0e6c         --   Gb  - Linker created -
+?main                    0x800'0e6d        Code  Gb  cmain.o [3]
+AHBPrescTable           0x2000'0028  0x10  Data  Gb  system_stm32l1xx.o [1]
+APBAHBPrescTable        0x2000'000c  0x10  Data  Lc  stm32l1xx_rcc.o [1]
+BusFault_Handler         0x800'0445   0x2  Code  Gb  stm32l1xx_it.o [1]
+CRC8_Check               0x800'0dd9  0x1c  Code  Gb  common.o [1]
+CSTACK$$Base            0x2000'0060         --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0860         --   Gb  - Linker created -
+DebugMon_Handler         0x800'044b   0x2  Code  Gb  stm32l1xx_it.o [1]
+GPIO_Init                0x800'056d  0x6e  Code  Gb  stm32l1xx_gpio.o [1]
+GPIO_PinAFConfig         0x800'05ed  0x26  Code  Gb  stm32l1xx_gpio.o [1]
+GPIO_StructInit          0x800'05db  0x12  Code  Gb  stm32l1xx_gpio.o [1]
+HardFault_Handler        0x800'0441   0x2  Code  Gb  stm32l1xx_it.o [1]
+I2C1_CheckDevice         0x800'0411  0x2e  Code  Gb  i2c.o [1]
+I2C1_NAck                0x800'01d7  0x46  Code  Lc  i2c.o [1]
+I2C1_Read_Byte           0x800'02d5  0x64  Code  Lc  i2c.o [1]
+I2C1_Read_NByte          0x800'0339  0xd2  Code  Gb  i2c.o [1]
+I2C1_Send_Byte           0x800'0281  0x54  Code  Lc  i2c.o [1]
+I2C1_Soft_Init           0x800'00f5  0x42  Code  Gb  i2c.o [1]
+I2C1_Start               0x800'0137  0x4e  Code  Lc  i2c.o [1]
+I2C1_Stop                0x800'0185  0x52  Code  Lc  i2c.o [1]
+I2C1_Wait_Ack            0x800'021d  0x64  Code  Lc  i2c.o [1]
+LogOutput                0x800'0df5   0x6  Code  Gb  common.o [1]
+MIC_mvSum               0x2000'0058   0x2  Data  Gb  sensorMIC.o [1]
+MemManage_Handler        0x800'0443   0x2  Code  Gb  stm32l1xx_it.o [1]
+NMI_Handler              0x800'043f   0x2  Code  Gb  stm32l1xx_it.o [1]
+NVIC_Init                0x800'06b7  0x5a  Code  Gb  misc.o [1]
+NVIC_PriorityGroupConfig
+                         0x800'06ad   0xa  Code  Gb  misc.o [1]
+PLLMulTable             0x2000'0000   0xc  Data  Lc  stm32l1xx_rcc.o [1]
+PLLMulTable             0x2000'001c   0xc  Data  Gb  system_stm32l1xx.o [1]
+PendSV_Handler           0x800'044d   0x2  Code  Gb  stm32l1xx_it.o [1]
+RCC_AHBPeriphClockCmd    0x800'0505  0x14  Code  Gb  stm32l1xx_rcc.o [1]
+RCC_APB1PeriphClockCmd   0x800'0519  0x14  Code  Gb  stm32l1xx_rcc.o [1]
+RCC_GetClocksFreq        0x800'0473  0x92  Code  Gb  stm32l1xx_rcc.o [1]
+RCC_GetFlagStatus        0x800'052d  0x1a  Code  Gb  stm32l1xx_rcc.o [1]
+RCC_HCLKConfig           0x800'0465   0x8  Code  Gb  stm32l1xx_rcc.o [1]
+RCC_HSICmd               0x800'0451   0x6  Code  Gb  stm32l1xx_rcc.o [1]
+RCC_SYSCLKConfig         0x800'0457   0xe  Code  Gb  stm32l1xx_rcc.o [1]
+Region$$Table$$Base      0x800'0e5c         --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'0e6c         --   Gb  - Linker created -
+SVC_Handler              0x800'0449   0x2  Code  Gb  stm32l1xx_it.o [1]
+Serial_PutString         0x800'092d  0x24  Code  Gb  usart2.o [1]
+Serial_Usart2_Init       0x800'08dd  0x50  Code  Gb  usart2.o [1]
+SysTick_CLKSourceConfig
+                         0x800'0711  0x1a  Code  Gb  misc.o [1]
+SysTick_Handler          0x800'044f   0x2  Code  Gb  stm32l1xx_it.o [1]
+SystemCoreClock         0x2000'0038   0x4  Data  Gb  system_stm32l1xx.o [1]
+SystemInit               0x800'0959  0xec  Code  Gb  system_stm32l1xx.o [1]
+TIM2_IRQHandler          0x800'0b9f  0x50  Code  Gb  timer.o [1]
+TIM_ClearITPendingBit    0x800'0d6d   0x2  Code  Gb  stm32l1xx_tim.o [1]
+TIM_Cmd                  0x800'0d33  0x14  Code  Gb  stm32l1xx_tim.o [1]
+TIM_GetITStatus          0x800'0d57  0x14  Code  Gb  stm32l1xx_tim.o [1]
+TIM_ITConfig             0x800'0d47  0x10  Code  Gb  stm32l1xx_tim.o [1]
+TIM_TimeBaseInit         0x800'0cc9  0x4e  Code  Gb  stm32l1xx_tim.o [1]
+TimCount                0x2000'003c   0x1  Data  Gb  timer.o [1]
+Timer_10ms_handler      0x2000'0048   0x4  Data  Gb  timer.o [1]
+Timer_1ms_handler       0x2000'0040   0x4  Data  Gb  timer.o [1]
+Timer_5ms_handler       0x2000'0044   0x4  Data  Gb  timer.o [1]
+Timer_Init               0x800'0b3d  0x62  Code  Gb  timer.o [1]
+USART2_Conf              0x800'0851  0x8c  Code  Gb  usart2.o [1]
+USART_ClearFlag          0x800'0847   0x2  Code  Gb  stm32l1xx_usart.o [1]
+USART_Cmd                0x800'07e5  0x14  Code  Gb  stm32l1xx_usart.o [1]
+USART_GetFlagStatus      0x800'0839   0xe  Code  Gb  stm32l1xx_usart.o [1]
+USART_ITConfig           0x800'0807  0x32  Code  Gb  stm32l1xx_usart.o [1]
+USART_Init               0x800'0745  0x9a  Code  Gb  stm32l1xx_usart.o [1]
+USART_SendData           0x800'07f9   0x8  Code  Gb  stm32l1xx_usart.o [1]
+UsageFault_Handler       0x800'0447   0x2  Code  Gb  stm32l1xx_it.o [1]
+__cmain                  0x800'0e6d        Code  Gb  cmain.o [3]
+__exit                   0x800'0ead        Code  Gb  XXexit.o [3]
+__iar_data_init3         0x800'0e35  0x28  Code  Gb  data_init.o [3]
+__iar_packbits_init_single3
+                         0x800'0dfb  0x38  Code  Gb  packbits_init_single.o [3]
+__iar_program_start      0x800'0ec9        Code  Gb  cstartup_M.o [3]
+__vector_table           0x800'0000        Data  Gb  startup_stm32l1xx_md.o [1]
+_call_main               0x800'0e79        Code  Gb  cmain.o [3]
+_exit                    0x800'0ea1        Code  Gb  cexit.o [3]
+_main                    0x800'0e87        Code  Gb  cmain.o [3]
+delay_init               0x800'0615  0x18  Code  Gb  delay.o [1]
+delay_ms                 0x800'065b  0x42  Code  Gb  delay.o [1]
+delay_us                 0x800'062d  0x2e  Code  Gb  delay.o [1]
+exit                     0x800'0e9d   0x4  Code  Gb  exit.o [2]
+fac_us                  0x2000'004c   0x2  Data  Lc  delay.o [1]
+gCollectFlag            0x2000'004e   0x1  Data  Gb  main_functions.o [1]
+gMIC_noiseValue         0x2000'0056   0x2  Data  Gb  sensorMIC.o [1]
+loop                     0x800'0ac3  0x1a  Code  Gb  main_functions.o [1]
+m_MIC_mvLen             0x2000'0053   0x1  Data  Gb  sensorMIC.o [1]
+m_MIC_mvPtr             0x2000'0052   0x1  Data  Gb  sensorMIC.o [1]
+m_collectTick           0x2000'0050   0x2  Data  Gb  main_functions.o [1]
+main                     0x800'0e8b  0x12  Code  Gb  main.o [1]
+mic_AddData              0x800'0c23  0x38  Code  Gb  sensorMIC.o [1]
+mic_checkData            0x800'0c61  0x2a  Code  Gb  sensorMIC.o [1]
+mic_init                 0x800'0bf5  0x2e  Code  Gb  sensorMIC.o [1]
+mvMICData               0x2000'0054   0x1  Data  Gb  sensorMIC.o [1]
+nsr_i2_measure_blocking_read
+                         0x800'0d75  0x5c  Code  Gb  nsr_i2c.o [1]
+nsr_i2c_probe            0x800'0dd1   0x6  Code  Gb  nsr_i2c.o [1]
+setup                    0x800'0a95  0x2e  Code  Gb  main_functions.o [1]
+sys_init                 0x800'0a5d  0x36  Code  Gb  main_functions.o [1]
+tmrProcess               0x800'0add  0x2c  Code  Gb  main_functions.o [1]
+tmrProcess::lv_second_tick
+                        0x2000'004f   0x1  Data  Lc  main_functions.o [1]
+
+
+[1] = D:\dtitcode\EndPoints_2020\snrI2CTest\Release\Obj
+[2] = dl7M_tln.a
+[3] = rt7M_tl.a
+
+  3 956 bytes of readonly  code memory
+     68 bytes of readonly  data memory
+  2 138 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
